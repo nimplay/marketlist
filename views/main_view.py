@@ -7,8 +7,8 @@ class MainView(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.orientation = 'vertical'
-        self.padding = 10
-        self.spacing = 10
+        self.padding = 15
+        self.spacing = 15
 
         # Botón para crear una lista de compra
         create_list_button = Button(text="Crea una lista de compra", size_hint=(1, 0.2))
