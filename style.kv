@@ -1,0 +1,14 @@
+<StyledButton>:
+    background_normal: ''
+    background_color: 0, 0, 0, 0
+    color: 1, 1, 1, 1
+    font_size: '18sp'
+    bold: True
+    height: 60
+    canvas.before:
+        Color:
+            rgba: (0.2, 0.6, 0.9, 1) if self.text != "SALIR" else (0.9, 0.3, 0.3, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [15]
